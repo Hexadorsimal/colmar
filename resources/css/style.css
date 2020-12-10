@@ -66,3 +66,38 @@ section#banner a {
     text-decoration: none;
     text-align: center;
 }
+
+section#information {
+    display: flex;
+    padding: 32px 24px;
+}
+
+section#information .left {
+    width: 60%;
+}
+
+section#information .left img {
+    width: 100%;
+}
+
+section#information .right {
+    width: 40%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+section#information .right img {
+    width: 35%;
+    float: left;
+    margin-right: 24px;
+}
+
+section#information .right div {
+    padding: 16px;
+}
+
+section#information a {
+    text-decoration: none;
+}
