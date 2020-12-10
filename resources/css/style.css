@@ -35,52 +35,55 @@ nav ul li {
     font-size: 24px;
 }
 
-section#banner {
+#banner {
     display: flex;
     padding: 32px 24px;
     background-color: lightgray;
     align-items: center;
 }
 
-section#banner .left {
+#banner .left {
     width: 60%;
 }
 
-section#banner img {
+#banner img {
     width: 100%;
 }
 
-section#banner .right {
+#banner .right {
     width: 40%;
     font-size: 2rem;
     padding: 24px;
 }
 
-section#banner a {
+a {
+    text-decoration: none;
+}
+
+#banner a {
     display: block;
     color: white;
     background-color: dimgray;
     padding: 8px;
     font-size: 1.25rem;
     width: 75%;
-    text-decoration: none;
     text-align: center;
 }
 
-section#information {
+#information {
     display: flex;
     padding: 32px 24px;
 }
 
-section#information .left {
+#information .left {
     width: 60%;
 }
 
-section#information .left img {
+#information .left img {
     width: 100%;
 }
 
-section#information .right {
+#information .right {
     width: 40%;
     padding: 24px;
     display: flex;
@@ -88,16 +91,81 @@ section#information .right {
     font-size: 1.25rem;
 }
 
-section#information .right img {
+#information .right img {
     width: 35%;
     float: left;
     margin-right: 24px;
 }
 
-section#information .right div {
+#information .right div {
     padding: 16px;
 }
 
-section#information a {
+#information a {
     text-decoration: none;
+}
+
+#courses {
+    background-color: lightgray;
+    padding: 32px 72px;
+    text-align: center;
+}
+
+#courses .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+#courses .course {
+    text-align: left;
+    background-color: white;
+}
+
+#courses .course h3,
+#courses .course h4,
+#courses .course p {
+    padding: 16px;
+}
+
+#courses .course h4 {
+    text-transform: uppercase;
+}
+
+#thesis h1 {
+    text-align: center;
+}
+
+#thesis .grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 24px;
+    margin: 24px;
+}
+
+#thesis video {
+    width: 100%;
+}
+
+.exhibit {
+    display: flex;
+    align-items: center;
+}
+
+.exhibit img {
+    margin: 16px;
+    width: 35%;
+}
+
+
+#guest-lecture,
+#fisma {
+    background-color: lightgray;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
 }
